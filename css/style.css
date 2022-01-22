@@ -1,0 +1,22 @@
+/* 변수 정의*/
+:root {
+    --div-width : 100px;
+}
+
+.main-container {
+    width: var(--div-width);
+}
+/* data 속성 선택하기.*/
+
+/* [data-name='dream'] {
+    background-color: blue;
+} */
+/* div[data-name='dream'] {
+    div에서 data네임이 이거일때만.
+} */
+
+@media screen and (max-width: 768px) {
+    :root {
+        --div-width : 100px;    /* 이렇게 하면 쉽게 변경 가능 , 미디어 커리에서*/
+    }
+}

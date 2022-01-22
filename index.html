@@ -13,6 +13,148 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <img src="imgs/favicon.png" alt="logo">
+            <a href="#">JINU</a>
+        </div>
+        <div>
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item">Home</li>
+                <li class="navbar__menu__item">About</li>
+                <li class="navbar__menu__item">Skills</li>
+                <li class="navbar__menu__item">Work</li>
+                <li class="navbar__menu__item">Test</li>
+                <li class="navbar__menu__item">Contact</li>
+            </ul>
+        </div>
+    </nav>    
+    <section id="home">
+        <img src="imgs/profile.jpeg" alt="Jinu's profile" class="home__avatar">
+        <h1 class="home__title">Hello,👋<br/>I want First or Best</h1>
+        <h2 class="home__description">Amateur Front-end Developer</h2>
+        <button class="home__contact">Contact me</button>
+    </section>    
+    <!-- About  -->
+    <section id="about">
+        <h1>About me</h1>
+        <p>
+            현재 중소기업을 다니며 웹 개발자로 일 하고있습니다.<br/>
+            주 관심사는 프론트엔드의 데이터 시각화와 데이터처리 효율쪽 입니다.<br/>
+            현재는 백과 프론트의 경계 없이 일하고있지만, 더욱 잘해져서 프론트엔드에서 대체 불가능한 인재가 되고싶습니다.
+        </p>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="major__title">Front-end</div>
+                <div class="major__description">
+                    HTML, CSS, JavaScript, JQuery
+                    <br/>Vue, React, TypeScript
+                </div>
+            </div>
+            <i class="fas fa-server"></i>
+        </div>
+        <div class="about__jobs">
+            <div class="job">
+                <img src="imgs/jobs/yuhan.png" alt="" class="job__logo">
+                <p class="job__name">유한대학교 - ITSoftware</p>
+                <p class="job__period">2016 February - 2021 February</p>
+            </div>
+            <div class="job">
+                <img src="imgs/jobs/yuhan.png" alt="" class="job__logo">
+                <p class="job__name">퀀텀에듀솔루션 - Web Developer</p>
+                <p class="job__period">2021 February - 2021 May</p>
+            </div>
+            <div class="job">
+                <img src="imgs/jobs/yuhan.png" alt="" class="job__logo">
+                <p class="job__name">JSIT - Web Developer</p>
+                <p class="job__period">2021 May - Untilnow</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+            새로운 경험에 대한 거부감이 없고, 습득력이 빠르다고 생각합니다.
+            <br/>시간약속에 굉장히 철저하며, 만족할때 까지 하는 성격입니다.
+            <br/>협업도, 혼자하는 작업도 즐겨하는 편입니다.
+        </p>
+        <div class="skillset">
+            <div class="skillset__left">
+                <h3 class="skillset__title">Skills</h3>
+                <!-- skill Json 형태로 받아서 뿌려주기. vue로 만들기 ~ -->
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>HTML</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>HTML</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>HTML</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>HTML</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>HTML</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skillset__right">
+                <div class="tools">
+                    <h3 class="skillset__title">Tools</h3>
+                    <ul class="tools__list">
+                        <li><span>Visual Studio Code</span></li>
+                        <li><span>IntelliJ</span></li>
+                        <li><span>Eclipse</span></li>
+                        <li><span></span></li>
+                        <li><span></span></li>
+                    </ul>
+                </div>
+                <div class="etc">
+                    <h3 class="skillset__title">
+                        <li><span>Git</span></li>
+                        <li><span>Svn</span></li>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work"></section>
+    <section id="test"></section>
+    <section id="contact"></section>
 </body>
 </html>
