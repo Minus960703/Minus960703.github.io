@@ -1,22 +1,37 @@
-/* 변수 정의*/
+/* Global */
 :root {
-    --div-width : 100px;
-}
+    /* Color */
+    --color-white: #fff;
+    --color-light-white: #eee;
+    --color-dark-white: #bdbdbd;
+    --color-pink: #fe918d;
+    --color-dark-pink: #ff6863;
+    --color-black: #4d4d4d;
+    --colordark-grey: #4d4d4d;
+    --color-grey: #616161;
+    --color-light-grey: #7c7979;
+    --color-blue: #73aace;
+    --color-yellow: #fff7d1;
+    --color-orange: #feb546;
+    --color-black: #000000;
 
-.main-container {
-    width: var(--div-width);
-}
-/* data 속성 선택하기.*/
+    /* Font size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
 
-/* [data-name='dream'] {
-    background-color: blue;
-} */
-/* div[data-name='dream'] {
-    div에서 data네임이 이거일때만.
-} */
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
 
-@media screen and (max-width: 768px) {
-    :root {
-        --div-width : 100px;    /* 이렇게 하면 쉽게 변경 가능 , 미디어 커리에서*/
-    }
+    /* Size */
+} 
+
+/* Universal tags */
+
+* {
+    box-sizing: border-box;
 }
