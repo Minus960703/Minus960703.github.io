@@ -129,9 +129,9 @@ p {
     border: 1px solid transparent;
     border-radius: var(--size-border-radius);
 }
-/* .navbar__menu__item.active {
+.navbar__menu__item.active {
     border: 1px solid var(--color-black);
-} */
+}
 .navbar__menu__item:hover {
     border-color: var(--color-black);
     background-color: var(--color-dark-white);
@@ -183,6 +183,7 @@ p {
 .section {
     padding: 50px;
     text-align: center;
+    padding-top: 70px;
     margin: auto;
 }
 .section__container {
