@@ -64,6 +64,8 @@ button {
     cursor: pointer;
     border: none;
     outline: none;
+    padding: 0;
+    /* 아이폰은 padding 0 으로 해야한다. */
 }
 
 /* Typography */
@@ -172,6 +174,9 @@ p {
     border: 2px solid var(--color-black);
     border-radius: 4px;
     color: var(--color-black);
+}
+.home__contact:hover {
+    background-color: var(--color-beige);
 }
 
 /* Section common */
@@ -306,6 +311,7 @@ p {
     border-radius: var(--size-border-radius);
     font-size: var(--font-regular);
     padding: 8px 48px;
+    position: relative;
 }
 .category__btn.selected,
 .category__btn:hover {
@@ -325,9 +331,9 @@ p {
     height: 24px;
     line-height: 24px;
     display: inline-block;
-    position: relative;
+    position: absolute;
     top: -20px;
-    left: 4px;
+    right: 16px;
     opacity: 0;
     transition: all var(--animation-duration) ease-in;
 }
@@ -368,6 +374,7 @@ p {
 .project__description {
     position: absolute;
     display: flex;
+    color: var(--color-white);
     background-color: black;
     flex-direction: column;
     justify-content: center;
@@ -386,7 +393,7 @@ p {
 }
 
 .project__description h3 {
-    color: var(--color-white);
+    color: var(--color-orange);
 }
 
 .project__description h3:after{
@@ -395,16 +402,16 @@ p {
     background-color: black;
     position: relative;
     left: 50%;
-    width: 25px;
+    width: 59px;
     height: 2px;
-    margin-left: -12px;
+    transform: translateX(-50%);
     margin-top: 8px;
     background-color: var(--color-dark-white);
 }
 
 /* Testimonial */
 #testimonials {
-    background-origin: var(--color-light-white);
+    background-color: var(--color-light-white);
 }
 
 .testimonials {
@@ -451,7 +458,7 @@ p {
 .contact__title,
 .contact__email,
 .contact__rights {
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 .contact__title {
@@ -491,15 +498,29 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+    :root {
+        --font-large: 30px;
+        --font-medium: 18px;
+        --font-regular: 16px;
+        --font-small: 14px;
+        --font-micro: 12px;
+    }
     .navbar__toggle-btn {
         display: block;
+        top: 16px;
+        right: 16px;
+        font-size: var(--font-medium);
     }
 
     #navbar {
         flex-direction: column;
         align-items: flex-start;
+        background-color: var(--color-beige);
     }
 
+    #navbar.navbar--dark {
+        padding: 16px;
+    }
     .navbar__menu {
         flex-direction: column;
         text-align: center;
@@ -507,8 +528,19 @@ p {
         display: none;
     }
 
+    .navbar__menu.open {
+        display: block;
+    }
+
+    .section {
+        padding: 16px;
+        padding-top: 40px;
+    }
+
     .about__majors {
         flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 0px;
     }
 
     .major {
@@ -519,12 +551,42 @@ p {
         flex-direction: column;
     }
 
+    .category__btn {
+        margin: 4px 0;
+        width: 100%;
+    }
+
     .project {
         flex-grow: 1;
     }
 
+    .testimonial {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
     .testimonial__avatar {
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 120px;
+    }
+    
+    .testimonial__avatar:nth-child(even),
+    .testimonial__avatar:nth-child(odd) {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .testimonial__speech-bubble {
+        order: 1;
+    }
+
+    .arrow-up {
+        bottom: 16px;
+        right: 16px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px;
     }
 }
