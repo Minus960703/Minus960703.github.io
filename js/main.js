@@ -1,5 +1,8 @@
 'use strict';
 
+import testimonials from './testimonial/testimonials.js';
+import skills from './skill/skills.js'
+
 // navbar 스크롤 내릴시 동작.
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
@@ -11,6 +14,10 @@ document.addEventListener('scroll', () => {
         navbar.classList.remove('navbar--dark');
     }
 });
+
+
+const testimonial = new testimonials();
+const skill = new skills();
 
 // Navbar toggle button for small screen
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');

@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jua&family=Open+Sans:wght@400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js" defer></script>
+    <script type="module" src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -119,89 +119,6 @@
             <div class="skillset">
                 <div class="skillset__left">
                     <h3 class="skillset__title">Skills</h3>
-                    <!-- skill Json 형태로 받아서 뿌려주기. vue로 만들기 ~ -->
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>HTML</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 95%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>CSS</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>JavaScript</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 75%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>JQuery</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>Vue</span>
-                            <span>65%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 65%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>Java</span>
-                            <span>78%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 78%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>TypeScript</span>
-                            <span>45%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 45%;"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skillset__right">
-                    <div class="tools">
-                        <h3 class="skillset__title">Tools</h3>
-                        <ul class="tools__list">
-                            <li><img src="imgs/vscode.png" alt="" class="tools__img" /><span>Visual Studio Code</span></li>
-                            <li><img src="imgs/intellij.png" alt="" class="tools__img" /><span>IntelliJ</span></li>
-                            <li><img src="imgs/eclipse.png" alt="" class="tools__img" /><span>Eclipse</span></li>
-                            <li><img src="imgs/android.png" alt="" class="tools__img" /><span>Android Studio</span></li>
-                        </ul>
-                    </div>
-                    <div class="etc">
-                        <h3 class="skillset__title">Etc</h3>
-                        <ul class="etc__list">
-                            <li><span>Git</span></li>
-                            <li><span>Svn</span></li>
-                            <li><span>Figma</span></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
@@ -271,37 +188,9 @@
     </section>
     <!-- Testimonials -->
     <section id="testimonials" class="section">
-        <div class="section__container">
+        <div class="section__container testimonials__container">
             <h1>Testimonials</h1>
             <h3>See what they say about me</h3>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <img src="imgs/default_user.png" alt="" class="testimonial__avatar" />
-                    <div class="testimonial__speech-bubble">
-                        <p>
-                            특정 기술을 배울 때 깊이 파느라 배우는 시간은 오래 걸리지만,
-                            그만큼 해당 기술에 대한 관련 지식과 이해도가 높으며
-                            단순히 얻은 지식을 사용할 줄 아는 것만이 아닌
-                            해당 지식을 응용하여 다양한 문제를 해결할 수 있는 능력있는 사람이었습니다.
-                            언젠가 다시 함께 일할 날이 오기를 기대하겠습니다.
-                        </p>
-                        <p class="name"><a href="https://github.com/sangwon0724">Sang won.Lee</a> / 퀀텀에듀솔루션</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <div class="testimonial__speech-bubble">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo porro sed maxime velit.
-                            Ipsam atque tempora eaque voluptatibus culpa omnis suscipit inventore, neque voluptatum
-                            voluptate aliquam, fuga exercitationem non consequuntur!
-                        </p>
-                        <p class="name"><a href="https://github.com/sangwon0724">Sang won.Lee</a> / 퀀텀에듀솔루션</p>
-                    </div>
-                    <img src="imgs/default_user.png" alt="" class="testimonial__avatar" />
-                </div>
-            </div>
         </div>
     </section>
     <!-- Contact -->
