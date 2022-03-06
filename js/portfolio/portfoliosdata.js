@@ -1,7 +1,7 @@
 export default [
   {
     id: 1,
-    link: "",
+    link: "https://github.com/Minus960703/Minus960703.github.io",
     img: "imgs/projects/portfolio.png",
     name: "Portfolio",
     content: "Clone coding with HTML and CSS and JavaScript Refactoring",
@@ -9,7 +9,7 @@ export default [
   },
   {
     id: 2,
-    link: "",
+    link: "https://github.com/Minus960703/youtube",
     img: "imgs/projects/youtube.png",
     name: "Youtube",
     content: "Clone coding with ReactJS",
