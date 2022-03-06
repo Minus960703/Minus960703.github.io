@@ -10,9 +10,9 @@ export default [
   {
     id: 2,
     link: "",
-    img: "",
-    name: "Portfolio",
-    content: "Clone coding with HTML and CSS and JavaScript Refactoring",
+    img: "imgs/projects/youtube.png",
+    name: "Youtube",
+    content: "Clone coding with ReactJS",
     type: "front-end"
   },
   {
@@ -21,7 +21,7 @@ export default [
     img: "",
     name: "Portfolio",
     content: "Clone coding with HTML and CSS and JavaScript Refactoring",
-    type: "front-end"
+    type: "back-end"
   },
   {
     id: 4,
@@ -29,6 +29,6 @@ export default [
     img: "",
     name: "Portfolio",
     content: "Clone coding with HTML and CSS and JavaScript Refactoring",
-    type: "front-end"
+    type: "mobile"
   }
 ]

@@ -3,6 +3,7 @@
 import testimonials from './testimonial/testimonials.js';
 import skills from './skill/skills.js'
 import jobs from './job/jobs.js'
+import portfolios from './portfolio/portfolios.js';
 
 // navbar 스크롤 내릴시 동작.
 const navbar = document.querySelector('#navbar');
@@ -20,6 +21,7 @@ document.addEventListener('scroll', () => {
 const testimonial = new testimonials();
 const skill = new skills();
 const job = new jobs();
+const portfolio = new portfolios();
 
 // Navbar toggle button for small screen
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
