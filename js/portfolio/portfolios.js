@@ -3,6 +3,9 @@ import data from './portfoliosdata.js'
 export default class port {
   constructor() {
     this.portfolioContainer = document.querySelector('.work__projects');
+    this.front = 0;
+    this.back = 0;
+    this.mobile = 0;
     this.renderHTML(data);
   }
 
@@ -22,7 +25,23 @@ export default class port {
           </div>
         `
         this.portfolioContainer.appendChild(this.project);
+        switch(i.type) {
+          case 'front-end' :
+            this.front++;
+            return;
+          case 'back-end' :
+            this.back++;
+            return;
+          case 'mobile' :
+            this.mobile++;
+            return; 
+        }
       })
+      this.sum = this.front + this.back + this.mobile;
+      document.querySelector('.all__count').textContent = this.sum;
+      document.querySelector('.front__count').textContent = this.front;
+      document.querySelector('.back__count').textContent = this.back;
+      document.querySelector('.mobile').textContent = this.mobile;
     }
   }
 }
